@@ -1,10 +1,12 @@
 class BankAccount:
     title = "Bank Incorporated"
 
-    def __init__(self, customer_name, current_balance, minimum_balance):
+    def __init__(self, customer_name, current_balance, minimum_balance, account_number, routing_number):
         self.customer_name = customer_name
         self.current_balance = current_balance
         self.minimum_balance = minimum_balance
+        self._account_number = account_number
+        self.__routing_number = routing_number
 
     def deposit(self, amount):
         self.current_balance = self.current_balance + amount
@@ -22,14 +24,3 @@ class BankAccount:
         print(f"Customer: {self.customer_name}")
         print(f"Current Balance: {self.current_balance}")
         print(f"Minimum Balance: {self.minimum_balance}\n ")
-
-acc1 = BankAccount("Alice", 1000, 200)
-acc2 = BankAccount("Bob", 500, 100)
-
-acc1.deposit(200)
-acc1.withdraw(900)
-acc1.print_customer_information()
-
-acc2.deposit(100)
-acc2.withdraw(501)
-acc2.print_customer_information()

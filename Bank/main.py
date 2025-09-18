@@ -2,8 +2,8 @@ from bankaccount import BankAccount
 from savingsaccount import SavingsAccount
 from checkingaccount import CheckingAccount
 
-acc1 = BankAccount("Alice", 1000, 200)
-acc2 = BankAccount("Bob", 500, 100)
+acc1 = BankAccount("Alice", 1000, 200, 123, 456)
+acc2 = BankAccount("Bob", 500, 10, 234, 567)
 
 acc1.deposit(200)
 acc1.withdraw(900)
