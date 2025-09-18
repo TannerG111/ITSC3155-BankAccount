@@ -9,7 +9,7 @@ class SavingsAccount(BankAccount):
     def add_interest(self):
         interest_amount = self.current_balance * self.interest_rate
         self.current_balance += interest_amount
-        print(f"Interest of {interest_amount:.2f} added. New balance: {self.current_balance:.2f}\n")
+        print(f"Interest of {interest_amount:.2f} added. New balance: {self.current_balance:.2f}")
 
     def print_customer_information(self):
         super().print_customer_information()

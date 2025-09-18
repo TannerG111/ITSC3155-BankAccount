@@ -10,7 +10,7 @@ class CheckingAccount(BankAccount):
         if self.current_balance - amount < self.minimum_balance:
             print(f"Cannot withdraw ${amount}: Not enough money in balance\n")
         elif amount > self.transfer_limit:
-            print(f"Cannot withdraw ${amount}: Amount specified '${amount}' is above transfer limit\n")
+            print(f"Cannot withdraw ${amount}: Amount specified '${amount}' is above transfer limit")
         else:
             super().withdraw(amount)
 
