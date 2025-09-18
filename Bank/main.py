@@ -18,8 +18,8 @@ acc4 = SavingsAccount("Sabrina", 1000, 205, 0.02, 45426, 5413)
 
 acc3.deposit(200)
 acc3.add_interest()
-acc3.withdraw(900)
-acc3.withdraw(200)
+acc3.withdraw(300)
+acc3.withdraw(100)
 acc3.print_customer_information()
 
 acc4.withdraw(501)

@@ -20,7 +20,7 @@ class BankAccount:
             print(f"{self.customer_name} withdrew ${amount}. New balance: ${self.current_balance}")
 
     def print_customer_information(self):
-        print(f"Bank: {BankAccount.title}")
+        print(f"\nBank: {BankAccount.title}")
         print(f"Customer: {self.customer_name}")
         print(f"Current Balance: {self.current_balance}")
-        print(f"Minimum Balance: {self.minimum_balance}\n ")
+        print(f"Minimum Balance: {self.minimum_balance} \n")
